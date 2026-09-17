@@ -1,5 +1,5 @@
-# Name:
-# Date:
+# Name: Adam Williams
+# Date: 09/18/2026
 # Course: COMP 163
 # Project 1: Paycheck Calculator
 
@@ -11,6 +11,14 @@
 #   3. Hourly rate
 #   4. Tax rate, as a percent (for example, 10 means 10%)
 #
+employee_name = input()
+hours_worked = float(input())
+hourly_rate = float(input())
+tax_rate = float(input())
+
+git add paycheck.py
+git commit -m "Read the four input values"
+git push
 # Hours worked and the hourly rate can have a fraction in them, like 37.5
 # hours or 10.25 hours. Use float() for all three numbers, not int().
 # int("37.5") crashes.
@@ -20,6 +28,14 @@
 #   tax withheld  = gross pay * (tax rate / 100)
 #   net pay       = gross pay - tax withheld
 #
+gross_pay = hours worked * hourly_rate
+tax_withheld = gross_pay * (tax_rate / 100)
+net_pay = gross_pay - tax_withheld
+
+git add paycheck.py
+git commit -m "Calculations"
+git push
+
 # Then print the four required output lines.
 # The exact format is in README.md. Match it exactly or the tests will fail.
 #
