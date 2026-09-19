@@ -16,9 +16,6 @@ hours_worked = float(input())
 hourly_rate = float(input())
 tax_rate = float(input())
 
-git add paycheck.py
-git commit -m "Read the four input values"
-git push
 # Hours worked and the hourly rate can have a fraction in them, like 37.5
 # hours or 10.25 hours. Use float() for all three numbers, not int().
 # int("37.5") crashes.
@@ -32,10 +29,6 @@ gross_pay = hours_worked * hourly_rate
 tax_withheld = gross_pay * (tax_rate / 100)
 net_pay = gross_pay - tax_withheld
 
-git add paycheck.py
-git commit -m "Calculations"
-git push
-
 # Then print the four required output lines.
 # The exact format is in README.md. Match it exactly or the tests will fail.
 #
@@ -46,7 +39,3 @@ print(f"Employee: {employee_name}")
 print(f"Gross Pay: ${gross_pay:.2f}")
 print(f"Tax withheld: ${tax_withheld:.2f}")
 print(f"Net pay: ${net_pay:.2f}")
-
-git add paycheck.py
-git commit -m "Outputs"
-git push
